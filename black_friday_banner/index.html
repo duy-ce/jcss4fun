@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Black Friday Banner</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section>
+			<h2>Black<br /><span>Friday</span></h2>
+			<div class="black"></div>
+			<img src="text.png" />
+		</section>
+		<script>
+			const black = document.querySelector(".black");
+			window.onmousemove = function (e) {
+				const x = e.clientX;
+				black.style.left = x + "px";
+			};
+		</script>
+	</body>
+</html>
