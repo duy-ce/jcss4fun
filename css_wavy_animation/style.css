@@ -14,25 +14,25 @@ body {
 
 .loader {
 	position: relative;
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
+	width: 700px;
+	height: 700px;
+	border-radius: 0%;
 	overflow: hidden;
 	transform: rotate(175deg);
 }
 
 .loader span {
 	position: absolute;
-	top: calc(12px * var(--i));
-	left: calc(12px * var(--i));
-	right: calc(12px * var(--i));
-	bottom: calc(12px * var(--i));
-	border: 10px solid #0b0b0b;
-	border-top: 10px solid #0f0;
-	border-left: 10px solid #0f0;
+	top: calc(5px * var(--i));
+	left: calc(5px * var(--i));
+	right: calc(5px * var(--i));
+	bottom: calc(5px * var(--i));
+	border: 15px solid #0b0b0b;
+	border-top: 15px solid #0f0;
+	border-left: 15px solid #0f0;
 	border-radius: 50%;
-	animation: animate 1s alternate ease-in-out infinite;
-	filter: hue-rotate(calc(60deg * var(--i)));
+	animation: animate 2s alternate ease-in-out infinite;
+	filter: hue-rotate(calc(40deg * var(--i)));
 	animation-delay: calc(-0.1s * var(--i));
 }
 
@@ -43,4 +43,10 @@ body {
 	100% {
 		transform: rotate(90deg);
 	}
+}
+
+.audio {
+	position: absolute;
+	top: 20px;
+	right: 10px;
 }
