@@ -1,70 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<title>Quick CSS Animation Effects</title>
-		<link rel="stylesheet" href="css_wavy_animation/style.css" />
+		<meta charset="utf-8" />
+		<title>Live Letters Counter | Mini Project</title>
+		<link rel="stylesheet" href="live_character_counter/style.css" />
 	</head>
 	<body>
-		<audio class="audio" id="youtube" controls autoplay></audio>
-		<div class="loader">
-			<span style="--i: 0"></span>
-			<span style="--i: 1"></span>
-			<span style="--i: 2"></span>
-			<span style="--i: 3"></span>
-			<span style="--i: 4"></span>
-			<span style="--i: 5"></span>
-			<span style="--i: 6"></span>
-			<span style="--i: 7"></span>
-			<span style="--i: 8"></span>
-			<span style="--i: 9"></span>
-			<span style="--i: 10"></span>
-			<span style="--i: 11"></span>
-			<span style="--i: 12"></span>
-			<span style="--i: 13"></span>
-			<span style="--i: 14"></span>
-			<span style="--i: 15"></span>
-			<span style="--i: 16"></span>
+		<div class="container">
+			<h3>Live Character Counter</h3>
+			<textarea
+				placeholder="Write your text here..."
+				onkeyup="countLetters()"
+			></textarea>
+			<p>Total Characters: <span class="count">0</span></p>
 		</div>
 		<script>
-			// YouTube video ID
-			var videoID = "rt0gojY_i5o";
+			const textarea = document.querySelector("textarea");
+			const count = document.querySelector(".count");
 
-			// Fetch video info (using a proxy if avoid CORS errors)
-			fetch(
-				"https://cors-anywhere.herokuapp.com/" +
-					"https://www.youtube.com/get_video_info?video_id=" +
-					videoID
-			).then((response) => {
-				if (response.ok) {
-					response.text().then((ytData) => {
-						// parse response to find audio info
-						var ytData = parse_str(ytData);
-						var getAdaptiveFormats = JSON.parse(
-							ytData.player_response
-						).streamingData.adaptiveFormats;
-						var findAudioInfo = getAdaptiveFormats.findIndex(
-							(obj) => obj.audioQuality
-						);
-
-						// get the URL for the audio file
-						var audioURL = getAdaptiveFormats[findAudioInfo].url;
-
-						// update the <audio> element src
-						var youtubeAudio = document.getElementById("youtube");
-						youtubeAudio.src = audioURL;
-					});
-				}
-			});
-
-			function parse_str(str) {
-				return str.split("&").reduce(function (params, param) {
-					var paramSplit = param.split("=").map(function (value) {
-						return decodeURIComponent(value.replace("+", " "));
-					});
-					params[paramSplit[0]] = paramSplit[1];
-					return params;
-				}, {});
+			function countLetters() {
+				const textLength = textarea.value.length;
+				count.innerText = `${textLength}`;
 			}
 		</script>
 	</body>
