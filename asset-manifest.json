@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/duy-ce/jcss4fun/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/duy-ce/jcss4fun/static/js/main.65b5f3a7.chunk.js",
+    "main.js.map": "/duy-ce/jcss4fun/static/js/main.65b5f3a7.chunk.js.map",
+    "runtime-main.js": "/duy-ce/jcss4fun/static/js/runtime-main.87053ee5.js",
+    "runtime-main.js.map": "/duy-ce/jcss4fun/static/js/runtime-main.87053ee5.js.map",
+    "static/js/2.3769b331.chunk.js": "/duy-ce/jcss4fun/static/js/2.3769b331.chunk.js",
+    "static/js/2.3769b331.chunk.js.map": "/duy-ce/jcss4fun/static/js/2.3769b331.chunk.js.map",
+    "static/js/3.46523103.chunk.js": "/duy-ce/jcss4fun/static/js/3.46523103.chunk.js",
+    "static/js/3.46523103.chunk.js.map": "/duy-ce/jcss4fun/static/js/3.46523103.chunk.js.map",
+    "index.html": "/duy-ce/jcss4fun/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/duy-ce/jcss4fun/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.3769b331.chunk.js.LICENSE.txt": "/duy-ce/jcss4fun/static/js/2.3769b331.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/duy-ce/jcss4fun/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87053ee5.js",
+    "static/js/2.3769b331.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.65b5f3a7.chunk.js"
+  ]
+}
