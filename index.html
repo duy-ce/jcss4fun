@@ -1,114 +1,486 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-  <head>
-    <title>I Love You</title>
-    <meta name="Generator" content="EditPlus" />
-    <meta name="Author" content="" />
-    <meta name="Keywords" content="" />
-    <meta name="Description" content="" />
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="iloveu/style.css" />
-    <style>
-      html,
-      /* body {
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
-        background: #000;
-      } */
+<head>
+	<title>I Love You</title>
+	<meta name="Generator" content="EditPlus"/>
+	<meta name="Author" content=""/>
+	<meta name="Keywords" content=""/>
+	<meta name="Description" content=""/>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="iloveu/style.css"/>
+	<link rel="stylesheet" href="iloveu/sstyle.css"/>
+	<style>
+		html,
+		canvas {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
 
-      canvas {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+		canvas {
+			/* top: 50%;
+				left: 50%; */
+			z-index: 1;
+			display: block;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			animation: heart 1.3s ease infinite;
+		}
 
-      canvas {
-        /* top: 50%;
-            left: 50%; */
-        z-index: 1;
-        display: block;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        animation: heart 1.3s ease infinite;
-      }
-      @keyframes heart {
-        0% {
-          transform: scale(1);
+		@keyframes heart {
+			0% {
+				transform: scale(1);
+			}
+			30% {
+				transform: scale(0.8);
+			}
+			/* 60% {
+					transform: scale(1.2);
+				} */
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+</head>
+
+<body>
+<div class="gsap-ohgiri" id="js-ohgiri">
+	<div class="window">
+		<div class="snow" ref="snow0"></div>
+		<div class="snow" ref="snow1"></div>
+		<div class="snow" ref="snow2"></div>
+		<div class="snow" ref="snow3"></div>
+		<div class="snow" ref="snow4"></div>
+		<div class="snow" ref="snow5"></div>
+		<div class="snow" ref="snow6"></div>
+		<div class="snow" ref="snow7"></div>
+		<div class="snow" ref="snow8"></div>
+		<div class="snow" ref="snow9"></div>
+		<div class="snow" ref="snow10"></div>
+		<div class="snow" ref="snow11"></div>
+		<div class="snow" ref="snow12"></div>
+		<div class="snow" ref="snow13"></div>
+		<div class="snow" ref="snow14"></div>
+		<div class="snow" ref="snow15"></div>
+		<div class="snow" ref="snow16"></div>
+		<div class="snow" ref="snow17"></div>
+		<div class="snow" ref="snow18"></div>
+		<div class="snow" ref="snow19"></div>
+		<div class="snow" ref="snow20"></div>
+		<div class="snow" ref="snow21"></div>
+		<div class="snow" ref="snow22"></div>
+		<div class="snow" ref="snow23"></div>
+		<div class="snow" ref="snow24"></div>
+		<div class="snow" ref="snow25"></div>
+		<div class="snow" ref="snow26"></div>
+		<div class="snow" ref="snow27"></div>
+		<div class="snow" ref="snow28"></div>
+		<div class="snow" ref="snow29"></div>
+		<div class="snow" ref="snow30"></div>
+		<div class="snow" ref="snow31"></div>
+		<div class="snow" ref="snow32"></div>
+		<div class="snow" ref="snow33"></div>
+		<div class="snow" ref="snow34"></div>
+		<div class="snow" ref="snow35"></div>
+		<div class="snow" ref="snow36"></div>
+		<div class="snow" ref="snow37"></div>
+		<div class="snow" ref="snow38"></div>
+		<div class="snow" ref="snow39"></div>
+		<div class="snow" ref="snow40"></div>
+		<div class="snow" ref="snow41"></div>
+		<div class="snow" ref="snow42"></div>
+		<div class="snow" ref="snow43"></div>
+		<div class="snow" ref="snow44"></div>
+		<div class="snow" ref="snow45"></div>
+		<div class="snow" ref="snow46"></div>
+		<div class="snow" ref="snow47"></div>
+		<div class="snow" ref="snow48"></div>
+		<div class="snow" ref="snow49"></div>
+		<div class="snow" ref="snow50"></div>
+		<div class="snow" ref="snow51"></div>
+		<div class="snow" ref="snow52"></div>
+		<div class="snow" ref="snow53"></div>
+		<div class="snow" ref="snow54"></div>
+		<div class="snow" ref="snow55"></div>
+		<div class="snow" ref="snow56"></div>
+		<div class="snow" ref="snow57"></div>
+		<div class="snow" ref="snow58"></div>
+		<div class="snow" ref="snow59"></div>
+		<div class="snow" ref="snow60"></div>
+		<div class="snow" ref="snow61"></div>
+		<div class="snow" ref="snow62"></div>
+		<div class="snow" ref="snow63"></div>
+		<div class="snow" ref="snow64"></div>
+		<div class="snow" ref="snow65"></div>
+		<div class="snow" ref="snow66"></div>
+		<div class="snow" ref="snow67"></div>
+		<div class="snow" ref="snow68"></div>
+		<div class="snow" ref="snow69"></div>
+		<div class="snow" ref="snow70"></div>
+		<div class="snow" ref="snow71"></div>
+		<div class="snow" ref="snow72"></div>
+		<div class="snow" ref="snow73"></div>
+		<div class="snow" ref="snow74"></div>
+		<div class="snow" ref="snow75"></div>
+		<div class="snow" ref="snow76"></div>
+		<div class="snow" ref="snow77"></div>
+		<div class="snow" ref="snow78"></div>
+		<div class="snow" ref="snow79"></div>
+		<div class="snow" ref="snow80"></div>
+		<div class="snow" ref="snow81"></div>
+		<div class="snow" ref="snow82"></div>
+		<div class="snow" ref="snow83"></div>
+		<div class="snow" ref="snow84"></div>
+		<div class="snow" ref="snow85"></div>
+		<div class="snow" ref="snow86"></div>
+		<div class="snow" ref="snow87"></div>
+		<div class="snow" ref="snow88"></div>
+		<div class="snow" ref="snow89"></div>
+		<div class="snow" ref="snow90"></div>
+		<div class="snow" ref="snow91"></div>
+		<div class="snow" ref="snow92"></div>
+		<div class="snow" ref="snow93"></div>
+		<div class="snow" ref="snow94"></div>
+		<div class="snow" ref="snow95"></div>
+		<div class="snow" ref="snow96"></div>
+		<div class="snow" ref="snow97"></div>
+		<div class="snow" ref="snow98"></div>
+		<div class="snow" ref="snow99"></div>
+		<div class="snow" ref="snow100"></div>
+		<div class="snow" ref="snow101"></div>
+		<div class="snow" ref="snow102"></div>
+		<div class="snow" ref="snow103"></div>
+		<div class="snow" ref="snow104"></div>
+		<div class="snow" ref="snow105"></div>
+		<div class="snow" ref="snow106"></div>
+		<div class="snow" ref="snow107"></div>
+		<div class="snow" ref="snow108"></div>
+		<div class="snow" ref="snow109"></div>
+		<div class="snow" ref="snow110"></div>
+		<div class="snow" ref="snow111"></div>
+		<div class="snow" ref="snow112"></div>
+		<div class="snow" ref="snow113"></div>
+		<div class="snow" ref="snow114"></div>
+		<div class="snow" ref="snow115"></div>
+		<div class="snow" ref="snow116"></div>
+		<div class="snow" ref="snow117"></div>
+		<div class="snow" ref="snow118"></div>
+		<div class="snow" ref="snow119"></div>
+		<div class="snow" ref="snow120"></div>
+		<div class="snow" ref="snow121"></div>
+		<div class="snow" ref="snow122"></div>
+		<div class="snow" ref="snow123"></div>
+		<div class="snow" ref="snow124"></div>
+		<div class="snow" ref="snow125"></div>
+		<div class="snow" ref="snow126"></div>
+		<div class="snow" ref="snow127"></div>
+		<div class="snow" ref="snow128"></div>
+		<div class="snow" ref="snow129"></div>
+		<div class="snow" ref="snow130"></div>
+		<div class="snow" ref="snow131"></div>
+		<div class="snow" ref="snow132"></div>
+		<div class="snow" ref="snow133"></div>
+		<div class="snow" ref="snow134"></div>
+		<div class="snow" ref="snow135"></div>
+		<div class="snow" ref="snow136"></div>
+		<div class="snow" ref="snow137"></div>
+		<div class="snow" ref="snow138"></div>
+		<div class="snow" ref="snow139"></div>
+		<div class="snow" ref="snow140"></div>
+		<div class="snow" ref="snow141"></div>
+		<div class="snow" ref="snow142"></div>
+		<div class="snow" ref="snow143"></div>
+		<div class="snow" ref="snow144"></div>
+		<div class="snow" ref="snow145"></div>
+		<div class="snow" ref="snow146"></div>
+		<div class="snow" ref="snow147"></div>
+		<div class="snow" ref="snow148"></div>
+		<div class="snow" ref="snow149"></div>
+		<div class="snow" ref="snow150"></div>
+		<div class="snow" ref="snow151"></div>
+		<div class="snow" ref="snow152"></div>
+		<div class="snow" ref="snow153"></div>
+		<div class="snow" ref="snow154"></div>
+		<div class="snow" ref="snow155"></div>
+		<div class="snow" ref="snow156"></div>
+		<div class="snow" ref="snow157"></div>
+		<div class="snow" ref="snow158"></div>
+		<div class="snow" ref="snow159"></div>
+		<div class="snow" ref="snow160"></div>
+		<div class="snow" ref="snow161"></div>
+		<div class="snow" ref="snow162"></div>
+		<div class="snow" ref="snow163"></div>
+		<div class="snow" ref="snow164"></div>
+		<div class="snow" ref="snow165"></div>
+		<div class="snow" ref="snow166"></div>
+		<div class="snow" ref="snow167"></div>
+		<div class="snow" ref="snow168"></div>
+		<div class="snow" ref="snow169"></div>
+		<div class="snow" ref="snow170"></div>
+		<div class="snow" ref="snow171"></div>
+		<div class="snow" ref="snow172"></div>
+		<div class="snow" ref="snow173"></div>
+		<div class="snow" ref="snow174"></div>
+		<div class="snow" ref="snow175"></div>
+		<div class="snow" ref="snow176"></div>
+		<div class="snow" ref="snow177"></div>
+		<div class="snow" ref="snow178"></div>
+		<div class="snow" ref="snow179"></div>
+		<div class="snow" ref="snow180"></div>
+		<div class="snow" ref="snow181"></div>
+		<div class="snow" ref="snow182"></div>
+		<div class="snow" ref="snow183"></div>
+		<div class="snow" ref="snow184"></div>
+		<div class="snow" ref="snow185"></div>
+		<div class="snow" ref="snow186"></div>
+		<div class="snow" ref="snow187"></div>
+		<div class="snow" ref="snow188"></div>
+		<div class="snow" ref="snow189"></div>
+		<div class="snow" ref="snow190"></div>
+		<div class="snow" ref="snow191"></div>
+		<div class="snow" ref="snow192"></div>
+		<div class="snow" ref="snow193"></div>
+		<div class="snow" ref="snow194"></div>
+		<div class="snow" ref="snow195"></div>
+		<div class="snow" ref="snow196"></div>
+		<div class="snow" ref="snow197"></div>
+		<div class="snow" ref="snow198"></div>
+		<div class="snow" ref="snow199"></div>
+		<div class="snow" ref="snow200"></div>
+		<div class="snow" ref="snow201"></div>
+		<div class="snow" ref="snow202"></div>
+		<div class="snow" ref="snow203"></div>
+		<div class="snow" ref="snow204"></div>
+		<div class="snow" ref="snow205"></div>
+		<div class="snow" ref="snow206"></div>
+		<div class="snow" ref="snow207"></div>
+		<div class="snow" ref="snow208"></div>
+		<div class="snow" ref="snow209"></div>
+		<div class="snow" ref="snow210"></div>
+		<div class="snow" ref="snow211"></div>
+		<div class="snow" ref="snow212"></div>
+		<div class="snow" ref="snow213"></div>
+		<div class="snow" ref="snow214"></div>
+		<div class="snow" ref="snow215"></div>
+		<div class="snow" ref="snow216"></div>
+		<div class="snow" ref="snow217"></div>
+		<div class="snow" ref="snow218"></div>
+		<div class="snow" ref="snow219"></div>
+		<div class="snow" ref="snow220"></div>
+		<div class="snow" ref="snow221"></div>
+		<div class="snow" ref="snow222"></div>
+		<div class="snow" ref="snow223"></div>
+		<div class="snow" ref="snow224"></div>
+		<div class="snow" ref="snow225"></div>
+		<div class="snow" ref="snow226"></div>
+		<div class="snow" ref="snow227"></div>
+		<div class="snow" ref="snow228"></div>
+		<div class="snow" ref="snow229"></div>
+		<div class="snow" ref="snow230"></div>
+		<div class="snow" ref="snow231"></div>
+		<div class="snow" ref="snow232"></div>
+		<div class="snow" ref="snow233"></div>
+		<div class="snow" ref="snow234"></div>
+		<div class="snow" ref="snow235"></div>
+		<div class="snow" ref="snow236"></div>
+		<div class="snow" ref="snow237"></div>
+		<div class="snow" ref="snow238"></div>
+		<div class="snow" ref="snow239"></div>
+		<div class="snow" ref="snow240"></div>
+		<div class="snow" ref="snow241"></div>
+		<div class="snow" ref="snow242"></div>
+		<div class="snow" ref="snow243"></div>
+		<div class="snow" ref="snow244"></div>
+		<div class="snow" ref="snow245"></div>
+		<div class="snow" ref="snow246"></div>
+		<div class="snow" ref="snow247"></div>
+		<div class="snow" ref="snow248"></div>
+		<div class="snow" ref="snow249"></div>
+		<div class="snow" ref="snow250"></div>
+		<div class="snow" ref="snow251"></div>
+		<div class="snow" ref="snow252"></div>
+		<div class="snow" ref="snow253"></div>
+		<div class="snow" ref="snow254"></div>
+		<div class="snow" ref="snow255"></div>
+		<div class="snow" ref="snow256"></div>
+		<div class="snow" ref="snow257"></div>
+		<div class="snow" ref="snow258"></div>
+		<div class="snow" ref="snow259"></div>
+		<div class="snow" ref="snow260"></div>
+		<div class="snow" ref="snow261"></div>
+		<div class="snow" ref="snow262"></div>
+		<div class="snow" ref="snow263"></div>
+		<div class="snow" ref="snow264"></div>
+		<div class="snow" ref="snow265"></div>
+		<div class="snow" ref="snow266"></div>
+		<div class="snow" ref="snow267"></div>
+		<div class="snow" ref="snow268"></div>
+		<div class="snow" ref="snow269"></div>
+		<div class="snow" ref="snow270"></div>
+		<div class="snow" ref="snow271"></div>
+		<div class="snow" ref="snow272"></div>
+		<div class="snow" ref="snow273"></div>
+		<div class="snow" ref="snow274"></div>
+		<div class="snow" ref="snow275"></div>
+		<div class="snow" ref="snow276"></div>
+		<div class="snow" ref="snow277"></div>
+		<div class="snow" ref="snow278"></div>
+		<div class="snow" ref="snow279"></div>
+		<div class="snow" ref="snow280"></div>
+		<div class="snow" ref="snow281"></div>
+		<div class="snow" ref="snow282"></div>
+		<div class="snow" ref="snow283"></div>
+		<div class="snow" ref="snow284"></div>
+		<div class="snow" ref="snow285"></div>
+		<div class="snow" ref="snow286"></div>
+		<div class="snow" ref="snow287"></div>
+		<div class="snow" ref="snow288"></div>
+		<div class="snow" ref="snow289"></div>
+		<div class="snow" ref="snow290"></div>
+		<div class="snow" ref="snow291"></div>
+		<div class="snow" ref="snow292"></div>
+		<div class="snow" ref="snow293"></div>
+		<div class="snow" ref="snow294"></div>
+		<div class="snow" ref="snow295"></div>
+		<div class="snow" ref="snow296"></div>
+		<div class="snow" ref="snow297"></div>
+		<div class="snow" ref="snow298"></div>
+		<div class="snow" ref="snow299"></div>
+	</div>
+	<canvas id="pinkboard">
+		<canvas id="pinkboard"></canvas>
+	</canvas>
+</div>
+<div class="container">
+	<div class="bubbles">
+		<span style="--i: 11"></span>
+		<span style="--i: 12"></span>
+		<span style="--i: 24"></span>
+		<span style="--i: 10"></span>
+		<span style="--i: 14"></span>
+		<span style="--i: 23"></span>
+		<span style="--i: 18"></span>
+		<span style="--i: 16"></span>
+		<span style="--i: 19"></span>
+		<span style="--i: 20"></span>
+		<span style="--i: 22"></span>
+		<span style="--i: 25"></span>
+		<span style="--i: 18"></span>
+		<span style="--i: 21"></span>
+		<span style="--i: 15"></span>
+		<span style="--i: 13"></span>
+		<span style="--i: 26"></span>
+		<span style="--i: 17"></span>
+		<span style="--i: 11"></span>
+		<span style="--i: 12"></span>
+		<span style="--i: 24"></span>
+		<span style="--i: 10"></span>
+		<span style="--i: 14"></span>
+		<span style="--i: 23"></span>
+		<span style="--i: 18"></span>
+		<span style="--i: 16"></span>
+		<span style="--i: 19"></span>
+		<span style="--i: 20"></span>
+		<span style="--i: 22"></span>
+		<span style="--i: 25"></span>
+		<span style="--i: 18"></span>
+		<span style="--i: 21"></span>
+		<span style="--i: 15"></span>
+		<span style="--i: 13"></span>
+		<span style="--i: 26"></span>
+		<span style="--i: 17"></span>
+		<span style="--i: 13"></span>
+		<span style="--i: 28"></span>
+		<span style="--i: 13"></span>
+		<span style="--i: 28"></span>
+		<span style="--i: 25"></span>
+		<span style="--i: 18"></span>
+		<span style="--i: 21"></span>
+		<span style="--i: 15"></span>
+		<span style="--i: 13"></span>
+		<span style="--i: 26"></span>
+	</div>
+	<canvas id="pinkboard">
+		<canvas id="pinkboard"></canvas>
+	</canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/CSSRulePlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomBounce3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomWiggle3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EaselPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EasePack.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathHelper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/MotionPathPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PhysicsPropsPlugin3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/PixiPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrambleTextPlugin3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/ScrollToPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-064f53d0-5800-38e1-ed6c-0536e1ccc456"
+		crossorigin=""></script>
+
+<script>
+    console.clear();
+
+    new Vue({
+        el: "#js-ohgiri",
+
+        mounted() {
+            for (let i = 0; i < 300; i++) {
+                // element
+                const snow = this.$refs["snow" + i];
+
+                // 基準のx値
+                const baseX = gsap.utils.random(-10, 110);
+
+                // 初期配置
+                gsap.set(snow, {
+                    x: baseX + "vw",
+                    y: -10,
+                    opacity: gsap.utils.random(0, 1),
+                    scale: gsap.utils.random(0, 1)
+                });
+
+                // 縦方向
+                gsap.to(snow, {
+                    duration: gsap.utils.random(10, 30),
+                    y: "100vh",
+                    delay: gsap.utils.random(0, -30),
+                    repeat: -1,
+                    ease: "none"
+                });
+
+                // 横方向
+                gsap.to(snow, {
+                    duration: gsap.utils.random(5, 15),
+                    x: baseX + gsap.utils.random(-12, 12) + "vw",
+                    yoyo: true,
+                    repeat: -1,
+                    delay: gsap.utils.random(-20, -10),
+                    ease: "power1.inOut"
+                });
+            }
         }
-        30% {
-          transform: scale(0.8);
-        }
-        /* 60% {
-                transform: scale(1.2);
-            } */
-        100% {
-          transform: scale(1);
-        }
-      }
-    </style>
-  </head>
+    });
+</script>
 
-  <body>
-    <div class="container">
-      <div class="bubbles">
-        <span style="--i: 11"></span>
-        <span style="--i: 12"></span>
-        <span style="--i: 24"></span>
-        <span style="--i: 10"></span>
-        <span style="--i: 14"></span>
-        <span style="--i: 23"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 16"></span>
-        <span style="--i: 19"></span>
-        <span style="--i: 20"></span>
-        <span style="--i: 22"></span>
-        <span style="--i: 25"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 21"></span>
-        <span style="--i: 15"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 26"></span>
-        <span style="--i: 17"></span>
-        <span style="--i: 11"></span>
-        <span style="--i: 12"></span>
-        <span style="--i: 24"></span>
-        <span style="--i: 10"></span>
-        <span style="--i: 14"></span>
-        <span style="--i: 23"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 16"></span>
-        <span style="--i: 19"></span>
-        <span style="--i: 20"></span>
-        <span style="--i: 22"></span>
-        <span style="--i: 25"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 21"></span>
-        <span style="--i: 15"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 26"></span>
-        <span style="--i: 17"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 28"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 28"></span>
-        <span style="--i: 25"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 21"></span>
-        <span style="--i: 15"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 26"></span>
-      </div>
-      <canvas id="pinkboard">
-        <canvas id="pinkboard"> </canvas>
-      </canvas>
-    </div>
-
-    <script>
-      /*
-       * Settings
-       */
-      var settings = {
+<script>
+    /*
+	 * Settings
+	 */
+    var settings = {
         // particles: {
         //     length: 1500, // maximum amount of particles
         //     duration: 2, // particle duration in sec
@@ -117,292 +489,299 @@
         //     size: 30, // particle size in pixels
         // },
         particles: {
-          length: 15000,
-          duration: 3,
-          velocity: 150,
-          effect: -0.8,
-          size: 10,
+            length: 15000,
+            duration: 3,
+            velocity: 150,
+            effect: -0.8,
+            size: 10,
         },
-      };
+    };
 
-      /*
-       * RequestAnimationFrame polyfill by Erik Möller
-       */
-      (function () {
+    /*
+	 * RequestAnimationFrame polyfill by Erik Möller
+	 */
+    (function () {
         var b = 0;
         var c = ["ms", "moz", "webkit", "o"];
         for (var a = 0; a < c.length && !window.requestAnimationFrame; ++a) {
-          window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"];
-          window.cancelAnimationFrame =
-            window[c[a] + "CancelAnimationFrame"] ||
-            window[c[a] + "CancelRequestAnimationFrame"];
+            window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"];
+            window.cancelAnimationFrame =
+                window[c[a] + "CancelAnimationFrame"] ||
+                window[c[a] + "CancelRequestAnimationFrame"];
         }
         if (!window.requestAnimationFrame) {
-          window.requestAnimationFrame = function (h, e) {
-            var d = new Date().getTime();
-            var f = Math.max(0, 16 - (d - b));
-            var g = window.setTimeout(function () {
-              h(d + f);
-            }, f);
-            b = d + f;
-            return g;
-          };
+            window.requestAnimationFrame = function (h, e) {
+                var d = new Date().getTime();
+                var f = Math.max(0, 16 - (d - b));
+                var g = window.setTimeout(function () {
+                    h(d + f);
+                }, f);
+                b = d + f;
+                return g;
+            };
         }
         if (!window.cancelAnimationFrame) {
-          window.cancelAnimationFrame = function (d) {
-            clearTimeout(d);
-          };
+            window.cancelAnimationFrame = function (d) {
+                clearTimeout(d);
+            };
         }
-      })();
+    })();
 
-      /*
-       * Point class
-       */
-      var Point = (function () {
+    /*
+	 * Point class
+	 */
+    var Point = (function () {
         function Point(x, y) {
-          this.x = typeof x !== "undefined" ? x : 0;
-          this.y = typeof y !== "undefined" ? y : 0;
+            this.x = typeof x !== "undefined" ? x : 0;
+            this.y = typeof y !== "undefined" ? y : 0;
         }
+
         Point.prototype.clone = function () {
-          return new Point(this.x, this.y);
+            return new Point(this.x, this.y);
         };
         Point.prototype.length = function (length) {
-          if (typeof length == "undefined")
-            return Math.sqrt(this.x * this.x + this.y * this.y);
-          this.normalize();
-          this.x *= length;
-          this.y *= length;
-          return this;
+            if (typeof length == "undefined")
+                return Math.sqrt(this.x * this.x + this.y * this.y);
+            this.normalize();
+            this.x *= length;
+            this.y *= length;
+            return this;
         };
         Point.prototype.normalize = function () {
-          var length = this.length();
-          this.x /= length;
-          this.y /= length;
-          return this;
+            var length = this.length();
+            this.x /= length;
+            this.y /= length;
+            return this;
         };
         return Point;
-      })();
+    })();
 
-      /*
-       * Particle class
-       */
-      var Particle = (function () {
+    /*
+	 * Particle class
+	 */
+    var Particle = (function () {
         function Particle() {
-          this.position = new Point();
-          this.velocity = new Point();
-          this.acceleration = new Point();
-          this.age = 0;
+            this.position = new Point();
+            this.velocity = new Point();
+            this.acceleration = new Point();
+            this.age = 0;
         }
+
         Particle.prototype.initialize = function (x, y, dx, dy) {
-          this.position.x = x;
-          this.position.y = y;
-          this.velocity.x = dx;
-          this.velocity.y = dy;
-          this.acceleration.x = dx * settings.particles.effect;
-          this.acceleration.y = dy * settings.particles.effect;
-          this.age = 0;
+            this.position.x = x;
+            this.position.y = y;
+            this.velocity.x = dx;
+            this.velocity.y = dy;
+            this.acceleration.x = dx * settings.particles.effect;
+            this.acceleration.y = dy * settings.particles.effect;
+            this.age = 0;
         };
         Particle.prototype.update = function (deltaTime) {
-          this.position.x += this.velocity.x * deltaTime;
-          this.position.y += this.velocity.y * deltaTime;
-          this.velocity.x += this.acceleration.x * deltaTime;
-          this.velocity.y += this.acceleration.y * deltaTime;
-          this.age += deltaTime;
+            this.position.x += this.velocity.x * deltaTime;
+            this.position.y += this.velocity.y * deltaTime;
+            this.velocity.x += this.acceleration.x * deltaTime;
+            this.velocity.y += this.acceleration.y * deltaTime;
+            this.age += deltaTime;
         };
         Particle.prototype.draw = function (context, image, randomColor) {
-          function ease(t) {
-            return --t * t * t + 1;
-          }
-          var size = image.width * ease(this.age / settings.particles.duration);
-          context.globalAlpha = 1 - this.age / settings.particles.duration;
-          context.fillStyle = "#" + randomColor;
-          context.fillRect(
-            this.position.x - size / 2,
-            this.position.y - size / 2,
-            1,
-            1
-          );
-          context.drawImage(
-            image,
-            this.position.x - size / 2,
-            this.position.y - size / 2,
-            size,
-            size
-          );
+            function ease(t) {
+                return --t * t * t + 1;
+            }
+
+            var size = image.width * ease(this.age / settings.particles.duration);
+            context.globalAlpha = 1 - this.age / settings.particles.duration;
+            context.fillStyle = "#" + randomColor;
+            context.fillRect(
+                this.position.x - size / 2,
+                this.position.y - size / 2,
+                1,
+                1
+            );
+            context.drawImage(
+                image,
+                this.position.x - size / 2,
+                this.position.y - size / 2,
+                size,
+                size
+            );
         };
         return Particle;
-      })();
+    })();
 
-      /*
-       * ParticlePool class
-       */
-      var ParticlePool = (function () {
+    /*
+	 * ParticlePool class
+	 */
+    var ParticlePool = (function () {
         var particles,
-          firstActive = 0,
-          firstFree = 0,
-          duration = settings.particles.duration;
+            firstActive = 0,
+            firstFree = 0,
+            duration = settings.particles.duration;
 
         function ParticlePool(length) {
-          // create and populate particle pool
-          particles = new Array(length);
-          for (var i = 0; i < particles.length; i++)
-            particles[i] = new Particle();
+            // create and populate particle pool
+            particles = new Array(length);
+            for (var i = 0; i < particles.length; i++)
+                particles[i] = new Particle();
         }
-        ParticlePool.prototype.add = function (x, y, dx, dy) {
-          particles[firstFree].initialize(x, y, dx, dy);
 
-          // handle circular queue
-          firstFree++;
-          if (firstFree == particles.length) firstFree = 0;
-          if (firstActive == firstFree) firstActive++;
-          if (firstActive == particles.length) firstActive = 0;
+        ParticlePool.prototype.add = function (x, y, dx, dy) {
+            particles[firstFree].initialize(x, y, dx, dy);
+
+            // handle circular queue
+            firstFree++;
+            if (firstFree == particles.length) firstFree = 0;
+            if (firstActive == firstFree) firstActive++;
+            if (firstActive == particles.length) firstActive = 0;
         };
         ParticlePool.prototype.update = function (deltaTime) {
-          var i;
+            var i;
 
-          // update active particles
-          if (firstActive < firstFree) {
-            for (i = firstActive; i < firstFree; i++)
-              particles[i].update(deltaTime);
-          }
-          if (firstFree < firstActive) {
-            for (i = firstActive; i < particles.length; i++)
-              particles[i].update(deltaTime);
-            for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
-          }
+            // update active particles
+            if (firstActive < firstFree) {
+                for (i = firstActive; i < firstFree; i++)
+                    particles[i].update(deltaTime);
+            }
+            if (firstFree < firstActive) {
+                for (i = firstActive; i < particles.length; i++)
+                    particles[i].update(deltaTime);
+                for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
+            }
 
-          // remove inactive particles
-          while (
-            particles[firstActive].age >= duration &&
-            firstActive != firstFree
-          ) {
-            firstActive++;
-            if (firstActive == particles.length) firstActive = 0;
-          }
+            // remove inactive particles
+            while (
+                particles[firstActive].age >= duration &&
+                firstActive != firstFree
+                ) {
+                firstActive++;
+                if (firstActive == particles.length) firstActive = 0;
+            }
         };
         ParticlePool.prototype.draw = function (context, image, randomColor) {
-          // draw active particles
-          if (firstActive < firstFree) {
-            for (i = firstActive; i < firstFree; i++)
-              particles[i].draw(context, image, randomColor);
-          }
-          if (firstFree < firstActive) {
-            for (i = firstActive; i < particles.length; i++)
-              particles[i].draw(context, image, randomColor);
-            for (i = 0; i < firstFree; i++) particles[i].draw(context, image, randomColor);
-          }
+            // draw active particles
+            if (firstActive < firstFree) {
+                for (i = firstActive; i < firstFree; i++)
+                    particles[i].draw(context, image, randomColor);
+            }
+            if (firstFree < firstActive) {
+                for (i = firstActive; i < particles.length; i++)
+                    particles[i].draw(context, image, randomColor);
+                for (i = 0; i < firstFree; i++) particles[i].draw(context, image, randomColor);
+            }
         };
         return ParticlePool;
-      })();
+    })();
 
-      /*
-       * Putting it all together
-       */
-      (function (canvas) {
+    /*
+	 * Putting it all together
+	 */
+    (function (canvas) {
         var context = canvas.getContext("2d"),
-          particles = new ParticlePool(settings.particles.length),
-          particleRate =
-            settings.particles.length / settings.particles.duration, // particles/sec
-          time;
+            particles = new ParticlePool(settings.particles.length),
+            particleRate =
+                settings.particles.length / settings.particles.duration, // particles/sec
+            time;
 
         // get point on heart with -PI <= t <= PI
         function pointOnHeart(t) {
-          return new Point(
-            160 * Math.pow(Math.sin(t), 3),
-            130 * Math.cos(t) -
-              50 * Math.cos(2 * t) -
-              20 * Math.cos(3 * t) -
-              10 * Math.cos(4 * t) +
-              25
-          );
+            return new Point(
+                160 * Math.pow(Math.sin(t), 3),
+                130 * Math.cos(t) -
+                50 * Math.cos(2 * t) -
+                20 * Math.cos(3 * t) -
+                10 * Math.cos(4 * t) +
+                25
+            );
         }
 
         // creating the particle image using a dummy canvas
         var image = (function () {
-          var canvas = document.createElement("canvas"),
-            context = canvas.getContext("2d");
-          canvas.width = settings.particles.size;
-          canvas.height = settings.particles.size;
-          // helper function to create the path
-          function to(t) {
-            var point = pointOnHeart(t);
-            point.x =
-              settings.particles.size / 3 +
-              (point.x * settings.particles.size) / 550;
-            point.y =
-              settings.particles.size / 3 -
-              (point.y * settings.particles.size) / 550;
-            return point;
-          }
-          // create the path
-          context.beginPath();
-          var t = -Math.PI;
-          var point = to(t);
-          context.moveTo(point.x, point.y);
-          while (t < Math.PI) {
-            t += 0.01; // baby steps!
-            point = to(t);
-            context.lineTo(point.x, point.y);
-          }
-          context.closePath();
-          // create the fill
-          // context.fillStyle = "#7FFFD4";
-          // context.fill();          
-          // create the image
-          var image = new Image();
-          image.src = canvas.toDataURL();
-          return image;
+            var canvas = document.createElement("canvas"),
+                context = canvas.getContext("2d");
+            canvas.width = settings.particles.size;
+            canvas.height = settings.particles.size;
+
+            // helper function to create the path
+            function to(t) {
+                var point = pointOnHeart(t);
+                point.x =
+                    settings.particles.size / 3 +
+                    (point.x * settings.particles.size) / 550;
+                point.y =
+                    settings.particles.size / 3 -
+                    (point.y * settings.particles.size) / 550;
+                return point;
+            }
+
+            // create the path
+            context.beginPath();
+            var t = -Math.PI;
+            var point = to(t);
+            context.moveTo(point.x, point.y);
+            while (t < Math.PI) {
+                t += 0.01; // baby steps!
+                point = to(t);
+                context.lineTo(point.x, point.y);
+            }
+            context.closePath();
+            // create the fill
+            // context.fillStyle = "#7FFFD4";
+            // context.fill();
+            // create the image
+            var image = new Image();
+            image.src = canvas.toDataURL();
+            return image;
         })();
 
         // render that thing!
         function render() {
-          // next animation frame
-          requestAnimationFrame(render);
+            // next animation frame
+            requestAnimationFrame(render);
 
-          // update time
-          var newTime = new Date().getTime() / 1700,
-            deltaTime = newTime - (time || newTime);
-          time = newTime;
+            // update time
+            var newTime = new Date().getTime() / 1700,
+                deltaTime = newTime - (time || newTime);
+            time = newTime;
 
-          // clear canvas
-          context.clearRect(0, 0, canvas.width, canvas.height);
+            // clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
 
-          // create new particles
-          var amount = particleRate * deltaTime;
-          for (var i = 0; i < amount; i++) {
-            var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-            var dir = pos.clone().length(settings.particles.velocity);
-            particles.add(
-              canvas.width / 2 + pos.x,
-              canvas.height / 2 - pos.y,
-              dir.x,
-              -dir.y
-            );
-          }
+            // create new particles
+            var amount = particleRate * deltaTime;
+            for (var i = 0; i < amount; i++) {
+                var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+                var dir = pos.clone().length(settings.particles.velocity);
+                particles.add(
+                    canvas.width / 2 + pos.x,
+                    canvas.height / 2 - pos.y,
+                    dir.x,
+                    -dir.y
+                );
+            }
 
-          // update and draw particles
-          var randomColor = Math.floor(Math.random() * 16777215).toString(16);
-          particles.update(deltaTime);
-          particles.draw(context, image, randomColor);
-          context.font = "30px Comic Sans MS";
-          context.fillStyle = "red";
-          context.textAlign = "center";
-          context.fillText("Love you bae", canvas.width / 2, canvas.height / 2);
+            // update and draw particles
+            var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            particles.update(deltaTime);
+            particles.draw(context, image, randomColor);
+            context.font = "30px Comic Sans MS";
+            context.fillStyle = "red";
+            context.textAlign = "center";
+            context.fillText("Love you bae", canvas.width / 2, canvas.height / 2);
         }
 
         // handle (re-)sizing of the canvas
         function onResize() {
-          canvas.width = canvas.clientWidth;
-          canvas.height = canvas.clientHeight;
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
         }
+
         window.onresize = onResize;
 
         // delay rendering bootstrap
         setTimeout(function () {
-          onResize();
-          render();
+            onResize();
+            render();
         }, 10);
-      })(document.getElementById("pinkboard"));
-    </script>
-  </body>
+    })(document.getElementById("pinkboard"));
+</script>
+</body>
 </html>
