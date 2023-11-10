@@ -473,9 +473,9 @@
         // },
         particles: {
             length: 15000,
-            duration: 3,
-            velocity: 150,
-            effect: -0.8,
+            duration: 5,
+            velocity: 20,
+            effect: -0.5,
             size: 10,
         },
     };
@@ -721,7 +721,7 @@
             requestAnimationFrame(render);
 
             // update time
-            var newTime = new Date().getTime() / 1700,
+            var newTime = new Date().getTime() / 2000,
                 deltaTime = newTime - (time || newTime);
             time = newTime;
 
@@ -742,7 +742,7 @@
             }
 
             // update and draw particles
-            var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            var randomColor = Math.floor(Math.random()).toString(16);
             particles.update(deltaTime);
             particles.draw(context, image, randomColor);
             context.font = "30px Comic Sans MS";
